@@ -7,5 +7,7 @@ public class DubboTest {
 
     public static void main(String[] args) {
         System.out.println("DubboTest.main");
+
+
     }
 }
