@@ -5,6 +5,7 @@ import sun.misc.Unsafe;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by li.ma on 2018/6/20.
@@ -24,5 +25,7 @@ public class IntegerDemo {
         //System.out.println(method.invoke(null, null));
 
         System.out.println(unsafe.arrayIndexScale(int[].class));
+
+        System.out.println(TimeUnit.SECONDS.toNanos(200));
     }
 }
