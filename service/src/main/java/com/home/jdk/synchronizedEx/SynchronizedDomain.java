@@ -10,8 +10,10 @@ public class SynchronizedDomain extends  Thread{
         TimeUnit.SECONDS.sleep(20);
     }
 
-    public synchronized void talk() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(20);
+    public void talk() throws InterruptedException {
+        synchronized (this) {
+            TimeUnit.SECONDS.sleep(20);
+        }
     }
 
     @Override

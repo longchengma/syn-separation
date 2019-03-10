@@ -29,7 +29,11 @@
 
 
   <dependencies>
-
+    <dependency>
+      <groupId>com.alibaba.otter</groupId>
+      <artifactId>canal.client</artifactId>
+      <version>1.0.12</version>
+    </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
@@ -503,6 +507,14 @@
       <artifactId>caffeine</artifactId>
       <version>2.6.0</version>
     </dependency>
+
+    <dependency>
+      <groupId>dom4j</groupId>
+      <artifactId>dom4j</artifactId>
+      <version>1.6.1</version>
+    </dependency>
+
+
   </dependencies>
 
 </project>

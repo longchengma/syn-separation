@@ -1,0 +1,14 @@
+server:
+    port: 8081
+
+spring:
+    dubbo:
+        application:
+            name: boot-dubbo-consumer
+        registry:
+            address: zookeeper://192.168.102.45:2181
+        protocol:
+            name: dubbo
+            port: 20880
+        scan:
+            com.home.alibaba.dubbo.provider.service

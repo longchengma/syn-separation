@@ -7,6 +7,8 @@ public class ThreadLocalDemo {
 
     private static ThreadLocal<String> localStr = new ThreadLocal<String>();
 
+    private static ThreadLocal<String> localStrEx = new ThreadLocal<String>();
+
     public static void main(String[] args) {
         localStr.set("this local string");
 

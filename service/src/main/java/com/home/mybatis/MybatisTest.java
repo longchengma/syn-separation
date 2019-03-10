@@ -1,6 +1,8 @@
 package com.home.mybatis;
 
-import com.alibaba.dubbo.common.extension.SPI;
+import com.home.mybatis.bean.User;
+import com.home.mybatis.config.MySqlsession;
+import com.home.mybatis.mapper.UserMapper;
 
 /**
  * Created by li.ma on 2018/6/8.
@@ -8,8 +10,9 @@ import com.alibaba.dubbo.common.extension.SPI;
 //@SPI("dubbo")
 public class MybatisTest {
     public static void main(String[] args) {
-        System.out.println("MybatisTest.main");
-
-
+        MySqlsession sqlSession = new MySqlsession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        User user = mapper.getUserById("1");
+        System.out.println(user);
     }
 }
